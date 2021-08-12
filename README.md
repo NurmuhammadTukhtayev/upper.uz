@@ -1,0 +1,2 @@
+# upper.uz
+upper.uz
