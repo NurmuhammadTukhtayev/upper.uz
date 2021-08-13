@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<%- include("../basic1/head.ejs") -%>
+
+    <body>
+        <div id="wrapper">
+            <%-  include("../basic1/nav.ejs") -%>
+                <!-- /. NAV SIDE  -->
+                <div id="page-wrapper">
+                    <div id="page-inner">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h1 class="page-head-line">Lang qo'shish</h1>
+                                <h1 class="page-subhead-line"> Bu yerda sayt langs qo'shiladi . </h1>
+                            </div>
+                        </div>
+                        <div class="row ">
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <div class="panel panel-info">
+                                    <div class="panel-heading">
+                                        FORM
+                                    </div>
+                                    <div class="panel-body">
+                                        <form role="form" method="POST" enctype="multipart/form-data">
+
+                                            <div class="form-group">
+                                                <label>Name</label>
+                                                <input class="form-control" name="name" type="text" value="">
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label>Icon</label>
+                                                <input class="form-control" name="file" type="file" value="">
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label>Type (bo'sh joy bumasin chiroyli yozilsin )</label>
+                                                <input class="form-control" name="type" type="text" value="">
+                                            </div>
+
+                                            <button type="submit" class="btn btn-info">Qo'shish</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+        <%- include("../basic1/footer.ejs") -%>
+    </body>
+
+</html>

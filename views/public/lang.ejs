@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>upper.uz</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/stylesheets/index-dcss.css">
+    <link rel="stylesheet" href="/stylesheets/index-mcss.css">
+    <link rel="stylesheet" href="/stylesheets/main.css">
+    <link rel="shortcut icon" href="/image/favicon.png">
+</head>
+
+<body onload="looadDisplayBlock()">
+    <%- include("../basic/nav-top") %>
+        <header>
+            <div class="info">
+                <h1>Texnalogiyalar</h1>
+                <div class="card-div">
+                    <% for(var i=0;i< lang.length;i++){ %>
+                        <div class="card" onclick="location.href='/<%= lang[i].type %>'">
+                            <img class="card-img" src="/lang/<%= lang[i].icon_lang %>" alt="">
+                            <p class="card-name">
+                                <%= lang[i].name_lang %>
+                            </p>
+                        </div>
+                        <% } %>
+                </div>
+            </div>
+            <div class="info">
+                <h1>Qo'shimcha</h1>
+                <div class="card-div">
+                    <div class="card-2" onclick="location.href='https://youtube.com/channel/UCMsqvVmGL2fjOLGWchsqdLQ'">
+                        <img src="/www/youtube.png" alt="">
+                        <p>upper-uz</p>
+                    </div>
+                    <div class="card-2" onclick="location.href='https://github.com/upper-uz'">
+                        <img src="/www/github.png" alt="">
+                        <p>upper-uz</p>
+                    </div>
+                    <div class="card-2" onclick="location.href='http://t.me/upper_uz'">
+                        <img src="/www/tg.png" alt="">
+                        <p>upper_uz</p>
+                    </div>
+                    <div class="card-2" onclick="location.href='http://instagram.com/upper.uz'">
+                        <img src="/www/insta.png" alt="">
+                        <p>upper.uz</p>
+                    </div>
+                    <div class="card-2" onclick="location.href='mailto:upper.uzb@gmail.com'">
+                        <img src="/www/gmail.png" alt="">
+                        <p>upper.uzb@gmail.com</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </header>
+</body>
+<script src="/js/index.js"></script>
+
+</html>

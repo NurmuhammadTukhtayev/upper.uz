@@ -1,0 +1,9 @@
+<nav class="left-navbar" id="left-navbar">
+    <ul>
+        <% for(var i=0;i< navbar.length;i++) { %>
+            <li onclick="location.href='/<%= lang %>/<%= navbar[i].url %>'">
+                <%= navbar[i].name %>
+            </li>
+            <% } %>
+    </ul>
+</nav>

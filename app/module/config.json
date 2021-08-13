@@ -1,8 +1,12 @@
 {
-  "app": {
-    "port": "80"
-  },
-  "db": {
-    
-  }
+    "app": {
+        "PORT": "8081",
+        "TEXT": "<p class='empty'>Ma'lumot mavjud emas!. </p>"
+    },
+    "db": {
+        "host": "localhost",
+        "username": "root",
+        "password": "@Aa12345",
+        "database": "upper"
+    }
 }
